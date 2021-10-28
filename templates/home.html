@@ -1,16 +1,16 @@
 <html>
-    <head>
-        <h1>Car Price Prediction</h1>
+    <head style="color:rgb(107, 208, 248)">
+        <h1 style="text-align:center; color:rgb(4, 19, 2)">Car Price Prediction</h1><br><br>
 
     </head>
 
     <body>
-        <div style="color:rgb(23, 23, 129)" id="something">
+        <div style="color:rgb(42, 10, 85)" id="something">
         <form action='/predict' method="POST">
-            <label for="Present_Price"><h3>What is the Showroom Price?(In lakhs) </h3></label><br>
-            <input type="float" name='Present_Price' id='first' required='required'><br><br>
-            <label for="Kms_Driven"><h3>How Many Kilometers Drived? </h3></label><br>
-            <input type="number" name='Kms_Driven' id = 'second' required='required'><br><br>
+            <label for="Present_Price"><h3>What is the Showroom Price?(In lakhs) (For ex. 10, 3.5, 7.2 etc.) </h3></label>
+            <input type="float" name='Present_Price' id='first' required='required'/>
+            <label for="Kms_Driven"><h3>How Many Kilometers Drived? </h3></label>
+            <input type="number" name='Kms_Driven' id = 'second' required='required'/>
             <label for="Owner"><h3>How much owners previously had the car(0 or 1 or 3)  </h3></label><br>
             <input type="number" name='Owner' id= 'third' required='required'><br><br>
             <label for="year"><h3>Year of the car when it was bought </h3></label><br>
@@ -45,10 +45,38 @@
 
     <style>
         body {
-            background-color: rgb(112, 190, 204);
-            text-align: center;
-            padding: 0px;
+            background-image: url('/static/car1.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            /* background-image: url("background.jpg"); */
+            /* background-color: #cccccc; */
+            /* background-color: rgb(130, 151, 155); */
+            text-align: left;
+            padding: 150px;
         }
+        /* label {
+                display: inline;
+                width: 140px;
+        }​ */
+        /* #something{
+            background-image: url('back.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        } */
+        /* @media screen and (min-width: 768px) {
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        
+            .form.contents>* {
+                width: 47%;
+            }
+               } */
+
         #fuel {
             width: 83px;
             height: 43px;
